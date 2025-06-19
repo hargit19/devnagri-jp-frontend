@@ -338,7 +338,7 @@
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 32px;
+            gap: 30px;
             margin-bottom: 32px;
         }
 
@@ -517,10 +517,10 @@
             
         }
 
-        .features-grid {
+        .features-grid-second {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+            gap: 80px;
             margin-top: 40px;
         }
 
@@ -987,6 +987,199 @@
             line-height: 1.7;
         }
 
+          .agentools-features-section-top {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .agentools-features-section-header {
+            color: #60a5fa;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+        }
+
+       
+
+        .header h1 {
+            font-size: 10px;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .content {
+            padding: 32px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            border-left: 4px solid #4A90E2;
+            padding-left: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .section-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        .agentools-features-section {
+            background: white;
+            margin: 32px 0;
+        }
+
+        .agentools-features-title {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 32px 0;
+            padding: 16px 24px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .agentools-features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .agentools-feature-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .agentools-feature-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .agentools-feature-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .agentools-feature-icon.low-cost-badge {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            transform: rotate(-15deg);
+        }
+
+        .agentools-icon-text {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .agentools-feature-icon.expert-badge {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+
+        .agentools-shield-text {
+            font-size: 11px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .agentools-feature-icon.support-badge {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            border-radius: 50%;
+            flex-direction: column;
+        }
+
+        .agentools-support-icon {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        .agentools-support-text {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .agentools-feature-icon.cancel-badge {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            flex-direction: column;
+        }
+
+        .agentools-cancel-icons {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .agentools-x-icon {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .agentools-ok-icon {
+            background: white;
+            color: #4A90E2;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 12px;
+        }
+
+        .agentools-cancel-text {
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .agentools-feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+
+        .agentools-feature-description {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -1277,10 +1470,10 @@
     <img src="banner wide.png" >
     </div>
 
-    <div class="container">
+    <!-- <div class="container">
         <h1 class="title">なぜAgentoolsが中小企業に選ばれるのか？</h1>
         
-        <div class="features-grid">
+        <div class="features-grid-second">
             <div class="feature-box">
                 <img src="fet1.png" class="fet-image">
                 <h3 class="feature-title">圧倒的な低コスト</h3>
@@ -1313,7 +1506,55 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+    <div class="agentools-features-section-top">
+        <div class="agentools-features-section-header">
+            <img src="icon.svg">
+            <h1>Agentoolsの運営企業紹介</h1>
+        </div>
+        
+        <div class="content">
+            
+
+            <div class="agentools-features-section">
+                
+                <div class="agentools-features-grid">
+                    <div class="agentools-feature-card">
+                        <img src="fet1.png" style="height: 80px; width: 80px;">
+                        <h3 class="agentools-feature-title">圧倒的な低コスト</h3>
+                        <p class="agentools-feature-description">
+                            高価なオリジナル開発は不要です。月々数千円から利用できる既存のAIツールを活用するため、どんな会社でも手軽にサービスを導入できます。
+                        </p>
+                    </div>
+
+                    <div class="agentools-feature-card">
+                        <img src="fet2.png" style="height: 80px; width: 80px;">
+                        <h3 class="agentools-feature-title">確かな専門性</h3>
+                        <p class="agentools-feature-description">
+                            世界25,000以上のAIエージェントを分析したAI選択のプロ。最先端AI企業とも連携し、数多ある選択肢の中から貴社に最適なツールを提案します。
+                        </p>
+                    </div>
+
+                    <div class="agentools-feature-card">
+                        <img src="fet3.png" style="height: 80px; width: 80px;">
+                        <h3 class="agentools-feature-title">安心の伴走サポート</h3>
+                        <p class="agentools-feature-description">
+                            ツールを導入して終わり、ではありません。月3〜4回のWeb会議を通して、使い方から効果の分析、改善まで成果が出るまでマンツーマンで徹底的にサポートします。
+                        </p>
+                    </div>
+
+                    <div class="agentools-feature-card">
+                        <img src="fet4.png" style="height: 80px; width: 80px;">
+                        <h3 class="agentools-feature-title">いつでも解約可能</h3>
+                        <p class="agentools-feature-description">
+                            もし、サービスが不要になったらいつでも契約終了が可能です。効果を実感いただけると確信していますが、この仕組みです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
 
     <div class="flow-section">
         <div class="flow-section-header">
