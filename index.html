@@ -163,8 +163,8 @@
             box-shadow: 0 4px 16px rgba(96, 165, 250, 0.2);
         }
 
-        .banner-img{
-            max-width: 1000px;
+        .banner-img img{
+            width: 800px;
             height: 200px;
             display: flex;
             align-items: center;
@@ -255,7 +255,7 @@
         .problems-title {
             font-size: 20px;
             font-weight: 600;
-            color: #1e293b;
+            color: #60a5fa;
         }
 
         .problems-list {
@@ -269,17 +269,16 @@
             gap: 12px;
             margin-bottom: 16px;
             font-size: 16px;
-            line-height: 1.6;
+            line-height: 0.75;
             color: #374151;
         }
 
         .problems-list li::before {
-            content: "□";
-            color: #60a5fa;
-            font-size: 18px;
+            content: "□ ";
+            color: black;
+            font-size: 26px;
             font-weight: 600;
             flex-shrink: 0;
-            margin-top: 2px;
         }
 
         .problems-conclusion {
@@ -325,7 +324,7 @@
         .solution-title {
             font-size: 20px;
             font-weight: 600;
-            color: #1e293b;
+            color: #60a5fa;
             line-height: 1.4;
         }
 
@@ -390,6 +389,20 @@
         .highlight-text {
             color: #dc2626;
             font-weight: 600;
+        }
+
+
+        .arrow-section{
+            width: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-inline: auto;
+            margin-block: 20px;
+        }
+
+        .arrow-image{
+            height: 70px;
         }
 
          .testimonials-section {
@@ -477,8 +490,8 @@
         }
 
         .highlight-word {
-            background: linear-gradient(135deg, #fbbf24, #f59e0b);
-            color: white;
+            background: white;
+            color: black;
             padding: 2px 6px;
             border-radius: 4px;
             font-weight: 600;
@@ -493,19 +506,15 @@
         .title {
             text-align: center;
             font-size: 24px;
-            color: #333;
+            color: #60a5fa;
             margin-bottom: 40px;
             font-weight: 600;
         }
 
         .title::before {
-            content: "❓";
             margin-right: 10px;
-            background: #4a90e2;
-            color: white;
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 18px;
+            background: url('./icon.svg');
+            
         }
 
         .features-grid {
@@ -594,10 +603,11 @@
         }
 
         .flow-section-header {
-            text-align: center;
+            text-align: left;
             background: white;
-            color: black;
-            margin-top: 20px;
+            color: #60a5fa;
+            margin-top: 30px;
+            margin-left: 30px;
         }
 
         .header-title {
@@ -605,8 +615,8 @@
             font-weight: 600;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 15px;
+            justify-content: left;
+            gap: 10px;
             margin: 0;
         }
 
@@ -743,6 +753,238 @@
         .highlight {
             color: #e74c3c;
             font-weight: 600;
+        }
+
+
+        .pricing-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .pricing-section {
+            padding: 40px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .pricing-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .section-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #60a5fa;
+            margin: 0;
+        }
+
+        .pricing-subtitle {
+            color: #5a6c7d;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .pricing-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .pricing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 12px;
+            border-left: 4px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-item.entry-fee {
+            border-left-color: #3498db;
+        }
+
+        .pricing-item.monthly-consulting {
+            border-left-color: #e74c3c;
+        }
+
+        .pricing-item.basic-plan {
+            border-left-color: #f39c12;
+        }
+
+        .pricing-item.free-agent {
+            border-left-color: #9b59b6;
+        }
+
+        .pricing-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+
+        .pricing-item.entry-fee::before {
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+        }
+
+        .pricing-item.monthly-consulting::before {
+            background: linear-gradient(to bottom, #e74c3c, #c0392b);
+        }
+
+        .pricing-item.basic-plan::before {
+            background: linear-gradient(to bottom, #f39c12, #e67e22);
+        }
+
+        .pricing-item.free-agent::before {
+            background: linear-gradient(to bottom, #9b59b6, #8e44ad);
+        }
+
+        .pricing-item:hover::before {
+            width: 8px;
+        }
+
+        .pricing-label {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .pricing-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .pricing-tax {
+            font-size: 12px;
+            color: #6c757d;
+            margin-left: 5px;
+        }
+
+        .pricing-description {
+            color: #5a6c7d;
+            font-size: 14px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .pricing-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #856404;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .pricing-note-icon {
+            color: #f39c12;
+            font-size: 16px;
+            margin-top: 2px;
+        }
+
+
+
+         .company-info {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .company-info-header {
+            background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+            color: white;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 28px;
+            height: 28px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #4A90E2;
+            font-weight: bold;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .content {
+            padding: 32px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .company-info-section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            border-left: 4px solid #4A90E2;
+            padding-left: 12px;
+        }
+
+        .company-info-section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .company-info-section-text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
         }
 
 
@@ -922,14 +1164,14 @@
             <img src="murata2.png" alt="村田 大" class="expert-image">
         </div>
     <div class="banner-img">
-    <img src="banner narrow.png" >
+    <img src="banner wide.png" >
     </div>
 
        
 
         <div class="problems-section">
             <div class="problems-header">
-                <div class="problems-icon">🤔</div>
+                <div class="problems-icon"><img src="icon.svg"></div>
                 <h2 class="problems-title">こんなことでお困りではありませんか？</h2>
             </div>
             
@@ -949,7 +1191,7 @@
 
          <div class="solution-section">
             <div class="solution-header">
-                <div class="solution-icon">💡</div>
+                <div class="solution-icon"><img src="icon.svg"></div>
                 <div>
                     <h2 class="solution-title">そのお悩み、Agentoolsが「低コストAI」で解決します。</h2>
                 </div>
@@ -986,8 +1228,14 @@
             </div>
         </div>
 
+        <div class="arrow-section">
+            <img src="arrow-rm.png" class="arrow-image">
+            <img src="arrow-rm.png" class="arrow-image">
+            <img src="arrow-rm.png" class="arrow-image">
+        </div>
+
         <div class="testimonials-section">
-            <h2 class="testimonials-title">お客様の声</h2>
+            
             
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -1025,8 +1273,8 @@
             </div>
         </div>
 
-         <!-- <div class="banner-img">
-    <img src="banner narrow.png" >
+         <div class="banner-img">
+    <img src="banner wide.png" >
     </div>
 
     <div class="container">
@@ -1070,7 +1318,7 @@
     <div class="flow-section">
         <div class="flow-section-header">
             <h1 class="header-title">
-                <div class="header-icon">🏠</div>
+                <div class="header-icon"><img src="icon.svg"></div>
                 ご相談から導入まで、たった4つのシンプルステップ
             </h1>
         </div>
@@ -1122,8 +1370,103 @@
     </div>
 
     <div class="banner-img">
-    <img src="banner narrow.png" >
-    </div> -->
+    <img src="banner wide.png" >
+    </div>
+
+    <div class="pricing-container">
+        <!-- Pricing Section -->
+        <div class="pricing-section">
+            <div class="section-header">
+                <div class="section-icon"><img src="icon.svg"></div>
+                <h2 class="section-title">価格</h2>
+            </div>
+            
+            <p class="pricing-subtitle">
+                安心して始められる、透明な料金プラン。<br>
+                専任のAIコンサルタントを、月額29,800円で雇用する感覚で<br>
+                ご活用ください。
+            </p>
+
+            <div class="pricing-grid">
+                <div class="pricing-item entry-fee">
+                    <div>
+                        <div class="pricing-label">入会金</div>
+                    </div>
+                    <div>
+                        <span class="pricing-value">30,000円</span>
+                        <span class="pricing-tax">(税別)</span>
+                    </div>
+                </div>
+
+                <div class="pricing-item monthly-consulting">
+                    <div>
+                        <div class="pricing-label">月間コンサルティング料</div>
+                    </div>
+                    <div>
+                        <span class="pricing-value">29,800円</span>
+                        <span class="pricing-tax">(税別)</span>
+                    </div>
+                </div>
+
+                <div class="pricing-item basic-plan">
+                    <div>
+                        <div class="pricing-label">ベーシックプラン</div>
+                    </div>
+                    <div>
+                        <span class="pricing-value">29,800円</span>
+                        <span class="pricing-tax">(税別)</span>
+                    </div>
+                </div>
+
+                <div class="pricing-item free-agent">
+                    <div>
+                        <div class="pricing-label">フリーエージェントプラン</div>
+                        <div class="pricing-description">
+                            弊社開発のAIエージェントが使い放題のプラン
+                        </div>
+                    </div>
+                    <div>
+                        <span class="pricing-value highlight-accent">79,800円</span>
+                        <span class="pricing-tax">(税別)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <div class="pricing-note-icon">※</div>
+                <div>AI SaaSなどのツールの費用は別途利用料がかかります。</div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="company-info">
+        <div class="company-info-header">
+            <div class="logo"><img src="icon.svg"></div>
+            <h1>Agentoolsの運営企業紹介</h1>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <div class="company-info-section-title">執筆者情報</div>
+                <div class="company-info-section-subtitle">Agentoolsについて</div>
+                <div class="company-info-section-text">
+                    Agentoolsは、インドのAI翻訳企業DevnagriAI社（2024年グラハム・ベル賞、Tie50等受賞）と日本のAIコンサルティング会社Aiberry株式会社の共同プロジェクトです。
+                </div>
+            </div>
+
+            <div class="representative-section">
+                <div class="company-info-section-subtitle">Agentools 日本版代表 村田 大について</div>
+                <div class="company-info-section-text">
+                    世界25,000以上あるAIエージェントのうち700にを分析、中小企業が自社に最適なAIツールを選択できるノウハウを研究。2024年人工知能学会「超知能のある未来社会論文集」入賞。
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div class="banner-img">
+       <img src="banner wide.png" >
+       </div>
 
 
 </body>
