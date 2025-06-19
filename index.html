@@ -136,7 +136,7 @@
             color: #1e293b;
             margin-bottom: 16px;
             font-weight: 500;
-            text-align: center;
+            text-align: left;
         }
 
         .expert-title {
@@ -144,14 +144,14 @@
             color: #60a5fa;
             font-weight: 600;
             margin-bottom: 4px;
-            text-align: center;
+            text-align: left;
         }
 
         .expert-name {
             font-size: 18px;
             color: #1e293b;
             font-weight: 700;
-            text-align: center;
+            text-align: left;
         }
 
         .expert-image {
@@ -161,6 +161,15 @@
             object-fit: cover;
             border: 3px solid rgba(96, 165, 250, 0.2);
             box-shadow: 0 4px 16px rgba(96, 165, 250, 0.2);
+        }
+
+        .banner-img{
+            max-width: 1000px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px auto;
         }
 
          .cta-banner {
@@ -281,6 +290,461 @@
             padding-top: 24px;
             border-top: 1px solid #e2e8f0;
         }
+
+         .solution-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px auto 0;
+            max-width: 1000px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .solution-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .solution-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .solution-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1e293b;
+            line-height: 1.4;
+        }
+
+        .solution-subtitle {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #374151;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 32px 24px;
+            text-align: center;
+            border: 1px solid rgba(96, 165, 250, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+            border-color: rgba(96, 165, 250, 0.2);
+        }
+
+        .feature-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 0 auto 16px;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #4b5563;
+        }
+
+        .highlight-text {
+            color: #dc2626;
+            font-weight: 600;
+        }
+
+         .testimonials-section {
+            margin: 40px auto 0;
+            max-width: 1000px;
+            padding: 0 20px;
+        }
+
+        .testimonials-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 32px 24px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+        }
+
+        .testimonial-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .testimonial-result {
+            background: linear-gradient(135deg, #60a5fa, #3b82f6);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            white-space: nowrap;
+        }
+
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(96, 165, 250, 0.2);
+            box-shadow: 0 4px 16px rgba(96, 165, 250, 0.2);
+            margin-bottom: 12px;
+        }
+
+        .testimonial-company {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        .testimonial-name {
+            font-size: 14px;
+            color: #64748b;
+        }
+
+        .testimonial-content {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #374151;
+            text-align: left;
+        }
+
+        .highlight-word {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+         .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .title::before {
+            content: "❓";
+            margin-right: 10px;
+            background: #4a90e2;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e8ecf0;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .fet-image{
+            height: 80px;
+            width: 80px;
+        }
+
+        .icon.cost {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+        }
+
+        .icon.expert {
+            background: linear-gradient(135deg, #2980b9, #1f5f8b);
+        }
+
+        .icon.support {
+            background: linear-gradient(135deg, #3498db, #2471a3);
+        }
+
+        .icon.cancel {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #5a6c7d;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+
+         .flow-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .flow-section-header {
+            text-align: center;
+            background: white;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 0;
+        }
+
+        .header-icon {
+            background: rgba(255, 255, 255, 0.2);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .main-content-flowchart {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 400px;
+        }
+
+        .left-section {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #e9ecef;
+        }
+
+       
+        .right-section {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .step-item {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 16px;
+            border-left: 5px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-item:nth-child(1) {
+            border-left-color: #3498db;
+        }
+
+        .step-item:nth-child(1)::before {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+
+        .step-item:nth-child(2) {
+            border-left-color: #e74c3c;
+        }
+
+        .step-item:nth-child(2)::before {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+        .step-item:nth-child(3) {
+            border-left-color: #f39c12;
+        }
+
+        .step-item:nth-child(3)::before {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+        }
+
+        .step-item:nth-child(4) {
+            border-left-color: #9b59b6;
+        }
+
+        .step-item:nth-child(4)::before {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+        }
+
+        .step-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+
+        .step-item:hover::before {
+            width: 8px;
+        }
+
+        .step-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .step-badge {
+            background: #27ae60;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .step-description {
+            color: #5a6c7d;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .step-details {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #2c3e50;
+            border: 1px solid rgba(52, 152, 219, 0.2);
+        }
+
+        .highlight {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -457,11 +921,11 @@
             </div>
             <img src="murata2.png" alt="村田 大" class="expert-image">
         </div>
+    <div class="banner-img">
+    <img src="banner narrow.png" >
+    </div>
 
-        <div class="cta-banner">
-            <div class="cta-text">無料　AI活用相談</div>
-            <a href="#contact" class="cta-button">お問い合わせ</a>
-        </div>
+       
 
         <div class="problems-section">
             <div class="problems-header">
@@ -482,6 +946,185 @@
                 一つでも当てはまったなら、私たちがお力になれるかもしれません。
             </p>
         </div>
+
+         <div class="solution-section">
+            <div class="solution-header">
+                <div class="solution-icon">💡</div>
+                <div>
+                    <h2 class="solution-title">そのお悩み、Agentoolsが「低コストAI」で解決します。</h2>
+                </div>
+            </div>
+            
+            <p class="solution-subtitle">
+                私たちは、何百万円もするようなオーダーメイドのAI開発は行いません。その代わり、世界中に存在する安価で高性能なAIツール（AI SaaS）やChatGPTなどを組み合わせ、あなたの会社の課題に合わせて<span class="highlight-text">**「今すぐできる」解決策**</span>をご提案・導入支援します。
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-number">1</div>
+                    <h3 class="feature-title">新規開拓を<br>自動化</h3>
+                    <p class="feature-description">
+                        AIが営業リストを分析し、有望なお客様へ自動でアプローチ。商談数が<span class="highlight-text">30%アップ</span>
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">2</div>
+                    <h3 class="feature-title">SNS集客<br>が3倍に</h3>
+                    <p class="feature-description">
+                        AIが魅力的なコンテンツ（文章など）を自動生成。手間をかけずにSNSからの予約が<span class="highlight-text">3倍に増加</span>
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">3</div>
+                    <h3 class="feature-title">従業員<br>の定着</h3>
+                    <p class="feature-description">
+                        AIツールで従業員の満足度を可視化・改善。離職率が<span class="highlight-text">5%まで劇的に低下</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-section">
+            <h2 class="testimonials-title">お客様の声</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-result">半年で商談数30%UP</div>
+                        <img src="test1.png" class="testimonial-avatar">
+                        <div class="testimonial-company">坂部印刷株式会社様</div>
+                    </div>
+                    <div class="testimonial-content">
+                        「ルート営業しかしておらず、行き詰まりを感じていました。Agentoolsさんに提案してもらった営業リストのAI自動分析とアプローチに電話営業を組み合わせたところ、商談設定ができるようになり、ました。」
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-result">漫画投稿でSNS流入が3倍増</div>
+                        <img src="test2.png" class="testimonial-avatar">
+                        <div class="testimonial-company">三友歯科医院様</div>
+                    </div>
+                    <div class="testimonial-content">
+                        「SNSは苦手意識がありましたが、AIが作った漫画を投稿するだけで予約が増えるなんて驚きです。患者様からも<span class="highlight-word">「面白い」</span>と好評で、医院の雰囲気も明るくなりました。」
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-result">悩んだ離職率が5%に</div>
+                        <img src="test3.png" class="testimonial-avatar">
+                        <div class="testimonial-company">海南亭様</div>
+                    </div>
+                    <div class="testimonial-content">
+                        「飲食業は人の入れ替わりが激しいのが悩みでした。BambooHRの導入で、従業員の不満や問題をきちんと把握、一人ひとりに合わせた声かけができるようになり、店の定着率が<span class="highlight-word">劇的</span>に改善しました。」
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- <div class="banner-img">
+    <img src="banner narrow.png" >
+    </div>
+
+    <div class="container">
+        <h1 class="title">なぜAgentoolsが中小企業に選ばれるのか？</h1>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <img src="fet1.png" class="fet-image">
+                <h3 class="feature-title">圧倒的な低コスト</h3>
+                <p class="feature-description">
+                    高価なオリジナル開発は不要です。月々数千円から利用できる既存のAIツールを活用するため、どんな会社でも手軽にサービスーを導入できます。
+                </p>
+            </div>
+
+            <div class="feature-box">
+               <img src="fet2.png" class="fet-image">
+                <h3 class="feature-title">確かな専門性</h3>
+                <p class="feature-description">
+                    世界<span class="highlight">25,000</span>以上のAIエージェントを分析したAI選択のプロ。最先端AI企業とも連携し、数多ある選択肢の中から貴社に最適なツールを提案します。
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <img src="fet3.png" class="fet-image">
+                <h3 class="feature-title">安心の伴走サポート</h3>
+                <p class="feature-description">
+                    ツールを導入して終わり、ではありません。月3〜4回のWeb会議を通して、使い方から効果の分析、改善まで成果が出るまでマンツーマンで徹底的にサポートします。
+                </p>
+            </div>
+
+            <div class="feature-box">
+                <img src="fet4.png" class="fet-image">
+                <h3 class="feature-title">いつでも解約可能</h3>
+                <p class="feature-description">
+                    もしサービスが不要になったらいつでも契約終了が可能です。効果を実感いただけると確信していますが、こその仕組みです。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flow-section">
+        <div class="flow-section-header">
+            <h1 class="header-title">
+                <div class="header-icon">🏠</div>
+                ご相談から導入まで、たった4つのシンプルステップ
+            </h1>
+        </div>
+
+        <div class="main-content-flowchart">
+            <div class="left-section">
+                
+                    <img src="flowchart.png" style="height: 750px; ">
+              
+            </div>
+
+            <div class="right-section">
+                <div class="step-item">
+                    <h3 class="step-title">
+                        無料コンサルティング
+                        <span class="step-badge">無料</span>
+                    </h3>
+                    <p class="step-description">
+                        現状分析＆AIツール提案まずはWeb会議で、あなたの会社の現状や課題をヒアリングさせてください。その場でAI活用の具体的な改善策をご提案します。
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <h3 class="step-title">有料化のご検討</h3>
+                    <p class="step-description">
+                        ご提案内容に価値を感じていただけたら、有料プランをご検討ください。<span class="highlight">無理な勧誘は一切ありません</span>のでご安心ください。
+                    </p>
+                </div>
+
+                <div class="step-item">
+                    <h3 class="step-title">導入支援＆運用サポート</h3>
+                    <p class="step-description">
+                        Webミーティングを通じ、ツールの初期設定から、現場の担当者様へのレクチャーまで、ツールを中心サポートします。
+                    </p>
+                    <div class="step-details">
+                        毎月1〜4回のミーティング<br>
+                        月間3〜4回の会議（ご担当者）
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <h3 class="step-title">効果分析＆改善</h3>
+                    <p class="step-description">
+                        導入結果を分析し、さらなる改善をご提案。継続的に改善を最大化させていきます。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-img">
+    <img src="banner narrow.png" >
+    </div> -->
+
 
 </body>
 </html>
