@@ -1170,6 +1170,100 @@
         }
 
 
+        .agentools-footer-main {
+            background: linear-gradient(135deg, #2a2d7a 0%, #1a1d4a 100%);
+            color: white;
+            padding: 60px 0 40px 0;
+            min-height: 300px;
+        }
+
+        .agentools-footer-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .agentools-brand-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .agentools-logo-placeholder {
+            width: 120px;
+            height: 60px;
+            
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .agentools-office-block h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #8b5cf6;
+        }
+
+        .agentools-office-details {
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .agentools-office-details p {
+            margin-bottom: 8px;
+        }
+
+        .agentools-contact-highlight {
+            color: #a78bfa;
+            font-weight: 500;
+        }
+
+        .agentools-policy-nav h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #8b5cf6;
+        }
+
+        .agentools-policy-nav ul {
+            list-style: none;
+        }
+
+        .agentools-policy-nav li {
+            margin-bottom: 12px;
+        }
+
+        .agentools-policy-nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .agentools-policy-nav a:hover {
+            color: #a78bfa;
+        }
+
+        .agentools-copyright-bar {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+
+
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -1678,6 +1772,51 @@
             </div>
     </div>
     </div>
+
+    <footer class="agentools-footer-main">
+        <div class="agentools-footer-wrapper">
+            <div class="agentools-brand-section">
+                <div class="agentools-logo-placeholder" >
+                    <img src="logo-removed.png" style="height: 50px; width: 220px;">
+                </div>
+            </div>
+            
+            <div class="agentools-office-block">
+                <h3>Devnagri AI (INDIA)</h3>
+                <div class="agentools-office-details">
+                    <p class="agentools-contact-highlight">+91-7302020284</p>
+                    <p class="agentools-contact-highlight">sales@devnagri.com</p>
+                    <p>Plot No. 1, Tower-Bgr, Third,</p>
+                    <p>Film City, Sector 16A, Noida,</p>
+                    <p>Uttar Pradesh 201301</p>
+                </div>
+            </div>
+            
+            <div class="agentools-office-block">
+                <h3>GROWTH 合同会社 (Japan)</h3>
+                <div class="agentools-office-details">
+                    <p>アイベリー株式会社</p>
+                    <p class="agentools-contact-highlight">TEL: 050-3204-1420</p>
+                    <p>所在地: 東京都港区芝浦</p>
+                    <p>4-19-1 3606</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="agentools-footer-wrapper">
+            <div class="agentools-policy-nav">
+                <ul>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">アクセシビリティに関する声明</a></li>
+                    <li><a href="#">著者プロフィール</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="agentools-copyright-bar">
+            <p>&copy; 2025 AGENTOOLS. All rights reserved.</p>
+        </div>
+    </footer>
 
     
 
