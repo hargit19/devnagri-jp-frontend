@@ -115,10 +115,9 @@
 
          .expert-box {
             background: transparent;
-            
             border-radius: 16px;
-            padding-right: 100px;
-            margin: 60px auto 40px;
+            padding-right: 120px;
+            margin: 0px auto 40px;
             max-width: 1000px;
             
             display: flex;
@@ -261,26 +260,29 @@
 
         .problems-list {
             list-style: none;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
         .problems-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 16px;
-            font-size: 18px;
-            line-height: 0.75;
-            color: #374151;
-        }
+    display: flex;
+    align-items: center; /* changed from flex-start to center */
+    gap: 12px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 1.4; /* increase line-height for better spacing */
+    color: #374151;
+}
 
-        .problems-list li::before {
-            content: "□ ";
-            color: black;
-            font-size: 26px;
-            font-weight: 600;
-            flex-shrink: 0;
-        }
+.problems-list li::before {
+    content: "□";
+    display: inline-block;
+    font-size: 24px; /* slightly smaller for better vertical alignment */
+    font-weight: 600;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-bottom: 2px; /* slight adjustment to vertically center */
+}
+
 
         .problems-conclusion {
             font-size: 16px;
@@ -1163,6 +1165,7 @@
             font-size: 18px;
             color: #555;
             line-height: 1.6;
+            text-align: left;
         }
 
 
@@ -1231,7 +1234,8 @@
 
             .problems-list li {
                 font-size: 15px;
-                margin-bottom: 14px;
+                margin-top: 15px;
+                align-self: center;
             }
 
             .problems-conclusion {
@@ -1438,7 +1442,7 @@
                         <div class="testimonial-company">三友歯科医院様</div>
                     </div>
                     <div class="testimonial-content">
-                        「SNSは苦手意識がありましたが、AIが作った漫画を投稿するだけで予約が増えるなんて驚きです。患者様からも<span class="highlight-word">「面白い」</span>と好評で、医院の雰囲気も明るくなりました。」
+                        「SNSは苦手意識がありましたが、AIが作った漫画を投稿するだけで予約が増えるなんて驚きです。患者様からも「面白い」と好評で、医院の雰囲気も明るくなりました。」
                     </div>
                 </div>
 
@@ -1449,7 +1453,7 @@
                         <div class="testimonial-company">海南亭様</div>
                     </div>
                     <div class="testimonial-content">
-                        「飲食業は人の入れ替わりが激しいのが悩みでした。BambooHRの導入で、従業員の不満や問題をきちんと把握、一人ひとりに合わせた声かけができるようになり、店の定着率が<span class="highlight-word">劇的</span>に改善しました。」
+                        「飲食業は人の入れ替わりが激しいのが悩みでした。BambooHRの導入で、従業員の不満や問題をきちんと把握、一人ひとりに合わせた声かけができるようになり、店の定着率が劇的に改善しました。」
                     </div>
                 </div>
             </div>
